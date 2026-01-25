@@ -1,12 +1,12 @@
-📌 Project Overview
+Project Overview
 
-☕ Coffee Orders Analysis (Excel Analytics Project)
+Coffee Orders Analysis (Excel Analytics Project) 
 
-This project is an end-to-end Excel data analytics project focused on analyzing coffee order sales performance. Using raw transactional data, the project demonstrates how Excel can be used to clean, enrich, analyze, and visualize business data in a structured and professional way.
+This project is an end-to-end Excel data analytics project focused on analyzing coffee order sales performance. Using raw transactional data, the project demonstrates how Excel can be used to clean, enrich, analyze, and visualize business data in a structured and professional way. 
 
 The goal was to transform raw order data into clear sales insights, identify top-selling products and customers, and present findings through interactive dashboards suitable for business decision-making.
 
-📂 Dataset & Workbook Structure
+-- Dataset & Workbook Structure
 
 The Excel workbook is structured into multiple worksheets, each serving a specific analytical purpose:
 
@@ -22,7 +22,8 @@ Charts – Visual representations of insights
 
 Dashboard – Consolidated view of all key insights
 
-🔄 Data Cleaning, Transformation & Enrichment
+--Data Cleaning, Transformation & Enrichment
+
 1. Customer Data Enrichment (XLOOKUP)
 
 Customer details were dynamically pulled into the orders table using XLOOKUP.
@@ -42,7 +43,7 @@ Email
 
 Country
 
-📌 This replicates table joins commonly done in SQL, but implemented in Excel.
+(NOTE) This replicates table joins commonly done in SQL, but implemented in Excel.
 
 2. Product Data Enrichment (INDEX + MATCH)
 
@@ -67,7 +68,7 @@ Unit Price
 
 📌 This approach allows flexible and scalable lookups across large datasets.
 
-3. Sales Calculation
+3. Sales Calculation; 
 
 A new Sales column was created to calculate total revenue per order.
 
@@ -78,7 +79,8 @@ Formula used:
 
 📌 This metric is the foundation for all revenue-based analysis in the project.
 
-4. Data Standardization & Categorization
+4. Data Standardization & Categorization;
+
 Coffee Type Name Expansion
 
 Abbreviated coffee types were converted into full names using logical formulas, and stored in a new column.
@@ -101,9 +103,9 @@ Formula used:
  IF(Roast="D","Dark","")))
 
 
-📌 This improves readability and ensures accurate grouping in Pivot Tables.
+📌 This improves ease of understanding and ensures accurate grouping in Pivot Tables.
 
-5. Loyalty Card Identification
+5. Loyalty Card Identification;
 
 A new Loyalty Card column was created using XLOOKUP to identify customers enrolled in the loyalty program.
 
@@ -111,9 +113,9 @@ Formula used:
 
 =XLOOKUP(Customer_ID, Customers!A:A, Customers!Loyalty_Card_Column)
 
-6. Data Formatting
+6. Data Formatting;
 
-Several formatting steps were applied to improve clarity and consistency:
+Several formatting steps were applied to improve clarity and consistency like;
 
 Order date reformatted from 01/10/2019 → 01-Oct-2019
 
@@ -125,7 +127,8 @@ Duplicate values checked and reviewed
 
 Data range converted into an Excel Table for easier analysis and scalability
 
-📊 Pivot Tables & Visual Analysis
+-- Pivot Tables & Visual Analysis
+
 7. Pivot Table Creation
 
 Pivot Tables were created to summarize and analyze sales performance efficiently.
@@ -142,9 +145,9 @@ Time-based sales trends
 
 8. Pivot Charts & Interactivity
 
-Multiple Pivot Charts were created, including:
+Multiple Pivot Charts were created, including;
 
-Sales Trend Over Time
+Sales Trend Over Time 
 
 Fields: Order Date, Coffee Type Name, Sum of Sales
 
@@ -156,9 +159,9 @@ Top 5 Customers by Sales
 
 Customers ranked by total purchase value
 
-9. Interactive Filters
+9. Interactive Filters;
 
-To enhance usability and exploration:
+It was created to enhance usability and exploration
 
 A Timeline was added for date-based filtering
 
@@ -172,7 +175,7 @@ Loyalty Card Status
 
 📌 This allows stakeholders to explore the data dynamically without modifying formulas.
 
-📈 Key Highlights & Insights
+📈 Key Highlights & Insights;
 
 Clear identification of best-selling coffee types
 
@@ -184,7 +187,7 @@ Loyalty card customers can be isolated to assess repeat-purchase behavior
 
 Time-based analysis reveals sales trends and seasonality
 
-🛠 Tools & Skills Demonstrated
+-- Tools & Skills Demonstrated
 
 Microsoft Excel
 
@@ -204,7 +207,7 @@ Dashboard design
 
 Business-focused analytical thinking
 
-💼 Business Value
+-- Business Value
 
 This project demonstrates how Excel can be used to:
 
